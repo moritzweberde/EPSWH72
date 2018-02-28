@@ -76,7 +76,7 @@
             <div class="content">
               <h4>Allgemeine Beschreibung</h4>
               <p>Sie wollen mehr Freiheiten in Ihrer Wahl des Ziels. Oftmals sind sie durch den vorinstallierten Akku in dieser Hinsicht beschränkt. Doch nicht mehr lange! Rüsten Sie schnell und einfach das EPS WH72 mit Hilfe unserer qualifizierten Mitarbeiter nach und Sie erhalten eine Akkulaufzeit von extra 20 Minuten. Aber nicht nur das! Auch ein ganz neuen Komfort , der durch den automatischen Übergang zum Notstromsystem sich zeigt, steigert die Benutzerfreundlichkeit Ihres Rollstuhls in Sekunden.</p>
-              <p><a href="#">Erfahre mehr</a></p>
+              <p><a href="javascript:void(0);" onclick="return allgemein(this);">Erfahre mehr</a></p>
             </div>
           </div>
         </div>
@@ -116,6 +116,16 @@
 
   <script async type="text/javascript" src="js/bulma.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    
+  <script type="text/javascript">
+							function allgemein() {
+								var dialog = bootbox.dialog({
+									title: 'Allgemeine Details',
+									message: "<p>Beispieltext</p>",
+								});
+							}
+    </script>
+  
 </body>
 </html>
