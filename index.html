@@ -90,7 +90,7 @@
             <div class="content">
               <h4>Technische Details</h4>
               <p>Sie müssen sich nie wieder Sorgen darüber machen, nicht zu wissen wann ihr Akkustand auf null sinkt. Mithilfe einer Leuchte, werden Sie informiert das der Hauptakku leer ist und sie nun mit der Notstromversorgung weiterfahren. All diese Punkte sind nur ein kleiner Ausschnitt, von den was das EPS WH72 alles bietet.</p>
-              <p><a href="#">Erfahre mehr</a></p>
+              <p><a href="javascript:void(0);" onclick="return allgemein(this);">Erfahre mehr</a></p>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@
             <div class="content">
               <h4>Völlig neue Möglichkeiten</h4>
               <p>Haben wir Ihre Interesse geweckt dann zögern Sie nicht uns telefonisch zu kontaktieren. In einem detaillierten Kundengespräch, können wir Ihnen die Funktionen des Modells noch näher bringen. <br /> Tel: 0361/30420823</p>
-              <p><a href="#">Erfahre mehr</a></p>
+              <p><a href="javascript:void(0);" onclick="return allgemein(this);">Erfahre mehr</a></p>
             </div>
           </div>
         </div>
@@ -115,16 +115,15 @@
    <br />
 
   <script async type="text/javascript" src="js/bulma.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
   <script type="text/javascript">
-							function allgemein() {
-								var dialog = bootbox.dialog({
-									title: 'Allgemeine Details',
-									message: "<p>Beispieltext</p>",
-								});
-							}
+	function allgemein() {
+	swal({
+	  title: "Überschift",
+	  text: "Beispieltext",
+	  button: "Fenster schließen!",
+	});}
     </script>
   
 </body>
